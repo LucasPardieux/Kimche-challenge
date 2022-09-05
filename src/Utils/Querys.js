@@ -6,6 +6,7 @@ export const ALL_CONTINENTS = gql`
           code,
           name,
           countries{
+            emojiU,
             code,
             name,
             languages{
@@ -22,6 +23,7 @@ export const GET_COUNTRIES = gql`
     countries {
       code,
       name,
+      emojiU,
       continent{
         code,
         name,
