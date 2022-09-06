@@ -10,6 +10,7 @@
     margin: 20px;
     background-color: rgb(255, 255, 255);
     box-shadow: -6px 5px 10px 1px #000;
+    overflow: hidden;
 }
 .Continent_card_title{
     text-align: center;
@@ -32,6 +33,7 @@
     font-size: 16px;
     font-weight: 700;
     margin: 10px;
+    line-height : 15px;
 }
 .Continent_card_info span{
     color: rgb(90, 90, 90);
@@ -54,4 +56,13 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+.Continent_card_backgroundFlag{
+    position: relative;
+    width: 400px;
+    bottom: 5rem;
+    z-index: 1;
+}
+.Continent_card_group{
+    margin: 0 0 0 20px;
 }

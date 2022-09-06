@@ -45,6 +45,14 @@ text-align: center;
 color: white;
 font-size: 50px;
 }
+.app_Subtitle{
+  position: relative;
+  bottom: 40px;
+  right: 20px;
+  text-align: center;
+  color: white;
+
+}
 .backgroundImg{
   position: fixed;
   z-index: -5;

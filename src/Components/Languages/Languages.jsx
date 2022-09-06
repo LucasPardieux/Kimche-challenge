@@ -56,7 +56,7 @@ const Languages = ({countries, search}) => {
         {languages?.map((l)=>{
             return (<div className="Continent_container" key={l}>
                 <div className="Continent_title">
-                <h1>{l}</h1>
+                <h1 className="Continent_card_group">{l}</h1>
                 <div className="Continent_separator"></div>
                 </div>
                 <div className="Continent_eachCard">

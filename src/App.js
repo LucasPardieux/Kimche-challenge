@@ -23,6 +23,7 @@ const App = () => (
           🚀
         </span>
       </h2>
+      <p className="app_Subtitle">You can search any country and group them</p>
       <Home></Home>
     </div>
   </ApolloProvider>
