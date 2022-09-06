@@ -113,3 +113,6 @@
     transition-duration: 400ms;
     transition-property: width, left;
   }
+  .loading{
+    color: red;
+  }
