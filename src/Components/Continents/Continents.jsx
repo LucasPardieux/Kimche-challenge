@@ -53,7 +53,7 @@ const compareContinents = (c) =>{
         continents?.map(c=>{
             return (<div className='Continent_container' key={c} >
               <div className="Continent_title">
-                <h1>{c}</h1>
+                <h1 className="Continent_card_group">{c}</h1>
                 <div className="Continent_separator"></div>
               </div>
                 <div className="Continent_eachCard">
