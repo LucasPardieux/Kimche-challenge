@@ -38,7 +38,7 @@ const Home = () => {
         <div>
             <form className='Home_form_inputs' onSubmit={handleSubmit}>
                 <div class="form__group field">
-                <input required="" className="form__field" placeholder='Search for a country' id='input' type="search"/>
+                <input autocomplete="off" required="" className="form__field" placeholder='Search for a country' id='input' type="search"/>
                 <label class="form__label" for="name">Search for a country</label>
                 <button onClick={e=>handleSubmit(e)} type="submit" className='submit'><BsSearch/></button>
                 </div>

@@ -57,7 +57,7 @@
     }
     .submit{
     position: absolute;
-    right: 16rem;
+    left: 12.5rem;
     border: none;
     background-color: transparent;
     color: white;
