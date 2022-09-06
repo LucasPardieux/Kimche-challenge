@@ -3,6 +3,8 @@ import {useQuery} from '@apollo/react-hooks';
 import Continents from '../Continents/Continents.jsx';
 import Lenguage from '../Languages/Languages.jsx';
 import { ALL_CONTINENTS, GET_COUNTRIES } from "../../Utils/Querys.js"
+import {BsSearch} from "react-icons/bs"
+import "./Home.css"
 const _ = require('lodash');
 
 const Home = () => {
@@ -34,11 +36,14 @@ const Home = () => {
   return (
     <div>
         <div>
-            <form onSubmit={handleSubmit}>
-                <input id='input' type="search"/>
-                <input type="submit" onClick={e=>handleSubmit(e)}/>
+            <form className='Home_form_inputs' onSubmit={handleSubmit}>
+                <div class="form__group field">
+                <input required="" className="form__field" placeholder='Search for a country' id='input' type="search"/>
+                <label class="form__label" for="name">Search for a country</label>
+                <button onClick={e=>handleSubmit(e)} type="submit" className='submit'><BsSearch/></button>
+                </div>
             </form>
-            <div>
+            <div className='Home_filters_button'>
                 <button name='countries' onClick={(e) => filters(e)}>Continents</button>
                 <button name='lenguages' onClick={(e) => filters(e)}>Lenguages</button>
             </div>
