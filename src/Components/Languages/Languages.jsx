@@ -1,6 +1,6 @@
 import React, { useEffect, useState} from 'react'
 import Flag from 'react-world-flags'
-import "./Languages.css"
+import "../Continents/Continents.css"
 const _ = require('lodash');
 
 const Languages = ({countries, search}) => {

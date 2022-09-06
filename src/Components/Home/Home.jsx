@@ -3,6 +3,7 @@ import {useQuery} from '@apollo/react-hooks';
 import Continents from '../Continents/Continents.jsx';
 import Lenguage from '../Languages/Languages.jsx';
 import { ALL_CONTINENTS, GET_COUNTRIES } from "../../Utils/Querys.js"
+import Loading from '../Loading/Loading.jsx';
 import {BsSearch} from "react-icons/bs"
 import "./Home.css"
 const _ = require('lodash');
@@ -48,7 +49,7 @@ const Home = () => {
                 <button name='lenguages' onClick={(e) => filters(e)}>Lenguages</button>
             </div>
         </div>
-        {response.loading?<p>Loading...</p>:
+        {response.loading?<Loading/>:
         filter === "countries"?<Continents countries={countriesState}></Continents>:<Lenguage countries={countriesState} search={document.getElementById("input").value}></Lenguage>}
     </div>
   )
