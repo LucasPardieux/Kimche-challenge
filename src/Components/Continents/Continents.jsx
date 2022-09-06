@@ -49,25 +49,19 @@ const compareContinents = (c) =>{
 
   return (
     <div>
-        {Filtered?.length!==0?
+        {
         continents?.map(c=>{
-            return (<div key={c} >
+            return (<div className='Continent_container' key={c} >
+              <div className="Continent_title">
                 <h1>{c}</h1>
-                <div className="Continent_container">
+                <div className="Continent_separator"></div>
+              </div>
+                <div className="Continent_eachCard">
                  {compareContinents(c)}
                 </div>
             </div>)
           })
-        :countries?.map((country)=> {
-            return (
-                <div key={country.code}>
-                    <h1>{country.continent.name}</h1>
-                    <div>
-                        <h4>{country.name}</h4>
-                    </div>
-                </div>
-            )
-        })}
+        }
     </div>
   )
 }

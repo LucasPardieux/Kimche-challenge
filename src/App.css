@@ -3,7 +3,7 @@
 }
 
 body{
-  background-color: rgb(23, 20, 38);
+  background-image: linear-gradient(to right bottom, #4b4d7b 0%, #3a3f6d 0%, #20243b 0%, #191d2e 0%, #121521 80%);
 }
 
 .App-logo {
@@ -39,4 +39,21 @@ body{
   to {
     transform: rotate(360deg);
   }
+}
+.app_container .app_title{
+text-align: center;
+color: white;
+font-size: 50px;
+}
+.backgroundImg{
+  position: fixed;
+  z-index: -5;
+  width: 1100px;
+  bottom: 15rem;
+  right: 60rem;
+  transform: rotate(260deg);
+  -webkit-transform: rotate(260deg);
+  -moz-transform: rotate(260deg);
+  -ms-transform: rotate(260deg);
+  -o-transform: rotate(260deg);
 }
