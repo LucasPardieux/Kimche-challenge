@@ -26,6 +26,7 @@ const Home = () => {
         e.preventDefault();
         const input = document.getElementById("input").value;
         const countriesByName = _.filter(countries.data.countries, function(o) { return o.name.toLowerCase().includes(input.toLowerCase()); });
+        //if(countriesByName.length===0) alert("404 - Countries not found")
         setCountriesState(countriesByName)
       }
 
@@ -49,8 +50,8 @@ const Home = () => {
                 <button name='lenguages' onClick={(e) => filters(e)}>Lenguages</button>
             </div>
         </div>
-        {response.loading?<Loading/>:
-        filter === "countries"?<Continents countries={countriesState}></Continents>:<Lenguage countries={countriesState} search={document.getElementById("input").value}></Lenguage>}
+        {response.loading?<Loading/>:countriesState?.length!==0?
+        filter === "countries"?<Continents countries={countriesState}></Continents>:<Lenguage countries={countriesState} search={document.getElementById("input").value}></Lenguage>:<h1 className='CountryNotFound'>404 - Countries not found</h1>}
     </div>
   )
 }

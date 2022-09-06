@@ -53,7 +53,8 @@ const Languages = ({countries, search}) => {
 
   return (
     <div>
-        {languages?.map((l)=>{
+        {
+        languages?.map((l)=>{
             return (<div className="Continent_container" key={l}>
                 <div className="Continent_title">
                 <h1 className="Continent_card_group">{l}</h1>
@@ -64,13 +65,7 @@ const Languages = ({countries, search}) => {
                 </div>
             </div>)
         })
-        // :countries?.map(c=>{
-        //     return (
-        //         <div key={c.code}>
-        //             <h1>{c.languages?.map(l=>l.name)}</h1>
-        //         </div>
-        //     )
-        // })
+        
         }
     </div>
   )

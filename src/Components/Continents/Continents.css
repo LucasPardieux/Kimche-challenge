@@ -66,3 +66,8 @@
 .Continent_card_group{
     margin: 0 0 0 20px;
 }
+.CountryNotFound{
+    color: red;
+    margin: 80px 0 0 0;
+    text-align: center;
+}
